@@ -1,17 +1,28 @@
 using NUnit.Framework;
 
+using UnityEngine;
+using UnityEngine.TestTools;
+
 namespace Editor.Tests
 {
+    [Category("Exercise 4: Strings")]
+    [TestFixture]
     public static class Exercise4Tests
     {
+        [TearDown]
+        public static void Cleanup()
+        {
+            Utility.ClearLogConsole();
+        }
+
         private const string DefaultGreeting = "Hello friend.";
 
         [TestCase("Cats", "Cool Cats")]
         [TestCase("Game", "Cool Game")]
         public static void MakeCool(string thing, string expected)
         {
-            string actual = Exercise4.MakeCool(thing);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected);
+            Exercise4.MakeCool(thing);
         }
 
         [TestCase("Marten", "Hello Marten.")]
@@ -21,8 +32,8 @@ namespace Editor.Tests
         [TestCase(null, DefaultGreeting)]
         public static void Greet(string name, string expected)
         {
-            string actual = Exercise4.Greet(name);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected);
+            Exercise4.Greet(name);
         }
     }
 }

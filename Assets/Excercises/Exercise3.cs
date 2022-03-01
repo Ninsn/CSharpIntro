@@ -1,14 +1,51 @@
-﻿/*
- * Exercises for if, else and switch statements.
- */
+﻿using UnityEngine;
+
+/// <summary>
+/// Exercises for flow control (if, else and switch statements)
+/// </summary>
 public static class Exercise3
 {
+    /*
+     * Create your own Clamp. It limits a value to be between a minimum and a maximum value.
+     *
+     * 'number' is the original value that needs to be possibly clamped.
+     * 'min' is the minimum value that 'number' is allowed to be.
+     * 'max' is the maximum value that 'number' is allowed to be,
+     *
+     * Take a look at the Unity documentation for Mathf.Clamp() if you are unsure:
+     * https://docs.unity3d.com/ScriptReference/Mathf.Clamp.html
+     *
+     * DO NOT actually use Math.Clamp() or Mathf.Clamp() but implement your own version.
+     */
+    public static void MyClamp(float number, float min, float max)
+    {
+
+        // TODO Debug.Log() the clamped value.
+
+    }
+
+    /*
+     * Convert human years into dog years (more accurately).
+     *
+     * The first human year equals 15 dog years.
+     * The second human year equals 9 dog years.
+     * Every additional human year equals 5 dog years.
+     *
+     * 'humanYears' is guaranteed to be 0 or positive.
+     */
+    public static void InDogYearsAdvanced(int humanYears)
+    {
+
+        // TODO Debug.Log() the dog years.
+
+    }
+
     /*
      * Try to complete a quest where you need to deliver a certain amount of items.
      * The quest can only be completed if you have the full required amount.
      *
      * If you don't have enough items, you can't complete the quest and
-     * 'newItemAmount' will be the same as the original 'itemAmount'.
+     * the new item amount will be the same as the original 'itemAmount'.
      *
      * 'itemAmount' is the amount of items you currently have.
      * 'requiredAmount' is the amount of items that are required to complete the quest.
@@ -16,15 +53,11 @@ public static class Exercise3
      * 'itemAmount' is guaranteed to be 0 or positive.
      * 'requiredAmount' is guaranteed to be 0 or positive.
      */
-    public static int TryCompleteQuest(int itemAmount, int requiredAmount)
+    public static void TryCompleteQuest(int itemAmount, int requiredAmount)
     {
-        int newItemAmount = -1;
-        // ##################################################
 
-        // TODO Set newItemAmount to the correct int value.
+        // TODO Debug.Log() the new item amount.
 
-        // ##################################################
-        return newItemAmount;
     }
 
     /*
@@ -39,42 +72,34 @@ public static class Exercise3
      *
      * 'age' is guaranteed to be 0 or positive.
      */
-    public static string GetAgeName(int age)
+    public static void GetAgeName(int age)
     {
-        string ageName = "";
-        // ##################################################
 
-        // TODO Set ageName to the correct string value.
+        // TODO Debug.Log() the physical description of the person.
 
-        // ##################################################
-        return ageName;
     }
 
     /*
-     * Get the name of the weekday based on the 'weekdayIndex'.
+     * Get the name of the month based on the numeric value.
      *
-     * Valid values are: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Unknown.
+     * Valid values are: January, February, March, April, May, June, July, August, September, October, November, December, Unknown.
      *
-     * 'weekdayIndex' is the index of the weekday.
-     * 0 -> Monday
-     * 1 -> Tuesday
+     * 'monthValue' is the numeric value of the month.
+     * 1 -> January
+     * 2 -> February
      * ...
-     * 6 -> Sunday
+     * 12 -> December
      * Any other number -> Unknown
      *
-     * 'weekdayIndex' can either be positive or negative.
+     * 'monthValue' can either be positive or negative.
      *
      * Hint: Try to use a switch case.
      */
-    public static string GetWeekdayName(int weekdayIndex)
+    public static void GetMonthName(int monthValue)
     {
-        string weekdayName = "";
-        // ##################################################
 
-        // TODO Set weekdayName to the correct string value.
+        // TODO Debug.Log() the name of the month;
 
-        // ##################################################
-        return weekdayName;
     }
 
     /*
@@ -92,14 +117,10 @@ public static class Exercise3
      *
      * Hint: Try to use a switch case using "fallthrough"-cases.
      */
-    public static string GetSeason(string month)
+    public static void GetSeason(string month)
     {
-        string season = "";
-        // ##################################################
 
-        // TODO Set season to the correct string value.
+        // TODO Debug.Log() the name of the season;
 
-        // ##################################################
-        return season;
     }
 }

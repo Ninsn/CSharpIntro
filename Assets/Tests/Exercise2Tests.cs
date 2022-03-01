@@ -1,31 +1,48 @@
-using System;
-
 using NUnit.Framework;
+
+using UnityEngine;
+using UnityEngine.TestTools;
 
 namespace Editor.Tests
 {
+    [Category("Exercise 2: Bools")]
+    [TestFixture]
     public static class Exercise2Tests
     {
+        [TearDown]
+        public static void Cleanup()
+        {
+            Utility.ClearLogConsole();
+        }
+
+        [Test]
+        public static void IsEven([Values(-5, 0, 1, 2, 4, 7, 13, 18)] int value)
+        {
+            bool expected = value % 2 == 0;
+            LogAssert.Expect(LogType.Log, expected.ToString());
+            Exercise2.IsEven(value);
+        }
+
         [Test]
         public static void CanBuyGame([Values(-10f, 0f, 30f)] float money,
                                [Values(-15f, -10f, -5f, 0f, 15f, 30f, 60f)] float price)
         {
             bool expected = money >= price;
-            bool actual = Exercise2.CanBuyGame(money, price);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected.ToString());
+            Exercise2.CanBuyGame(money, price);
         }
 
-        [TestCase(0, false)]
-        [TestCase(1, false)]
-        [TestCase(2, false)]
-        [TestCase(3, false)]
-        [TestCase(4, false)]
-        [TestCase(5, true)]
-        [TestCase(6, true)]
-        public static void IsWeekend(int index, bool expected)
+        [TestCase(0, true)]
+        [TestCase(1, true)]
+        [TestCase(2, true)]
+        [TestCase(3, true)]
+        [TestCase(4, true)]
+        [TestCase(5, false)]
+        [TestCase(6, false)]
+        public static void IsSchoolDay(int index, bool expected)
         {
-            bool actual = Exercise2.IsWeekend(index);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected.ToString());
+            Exercise2.IsSchoolDay(index);
         }
 
         [TestCase(0, false)]
@@ -40,8 +57,8 @@ namespace Editor.Tests
         [TestCase(99, false)]
         public static void IsTeenager(int age, bool expected)
         {
-            bool actual = Exercise2.IsTeenager(age);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected.ToString());
+            Exercise2.IsTeenager(age);
         }
 
         [TestCase(-11.3f, true)]
@@ -52,31 +69,8 @@ namespace Editor.Tests
         [TestCase(79.11f, true)]
         public static void IsMovingFast(float xSpeed, bool expected)
         {
-            bool actual = Exercise2.IsMovingFast(xSpeed);
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestCase(5, -10, 10)]
-        [TestCase(0, 3, 8)]
-        [TestCase(-7, -3, -1)]
-        [TestCase(130, -99, 99)]
-        public static void MyClamp(float value, float min, float max)
-        {
-            float expected = Math.Clamp(value, min, max);
-            float actual = Exercise2.MyClamp(value, min, max);
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestCase(0, 0)]
-        [TestCase(1, 15)]
-        [TestCase(2, 24)]
-        [TestCase(3, 29)]
-        [TestCase(7, 15 + 9 + 5*5)]
-        [TestCase(13, 15 + 9 + 11*5)]
-        public static void InDogYearsAdvanced(int humanYears, int expected)
-        {
-            int actual = Exercise2.InDogYearsAdvanced(humanYears);
-            Assert.AreEqual(expected, actual);
+            LogAssert.Expect(LogType.Log, expected.ToString());
+            Exercise2.IsMovingFast(xSpeed);
         }
     }
 }

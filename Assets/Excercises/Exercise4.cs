@@ -1,6 +1,8 @@
-﻿/*
- * Exercises for string manipulation
- */
+﻿using UnityEngine;
+
+/// <summary>
+/// Exercises for string manipulation
+/// </summary>
 public static class Exercise4
 {
     /*
@@ -13,15 +15,11 @@ public static class Exercise4
      *
      * Hint: Don't forget a space between the two words.
      */
-    public static string MakeCool(string thing)
+    public static void MakeCool(string thing)
     {
-        string coolThing = "";
-        // ##################################################
 
-        // TODO Set coolThing to the correct string value.
+        // TODO Debug.Log() the cool thing.
 
-        // ##################################################
-        return coolThing;
     }
 
     /*
@@ -38,14 +36,10 @@ public static class Exercise4
      * Hint: There are multiple ways to create the required string. Try using string interpolation.
      * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
      */
-    public static string Greet(string name)
+    public static void Greet(string name)
     {
-        string greeting = "";
-        // ##################################################
 
-        // TODO Set greeting to the correct string value.
+        // TODO Debug.Log() the greeting.
 
-        // ##################################################
-        return greeting;
     }
 }

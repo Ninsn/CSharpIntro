@@ -1,10 +1,10 @@
-﻿/*
- * Simple math exercises.
- */
-using System;
+﻿using System;
 
 using UnityEngine;
 
+/// <summary>
+/// Simple math exercises.
+/// </summary>
 public static class Exercise1
 {
     /*
@@ -13,15 +13,11 @@ public static class Exercise1
      * 'a' is the first summand.
      * 'b' is the second summand.
      */
-    public static int Add(int a, int b)
+    public static void Add(int a, int b)
     {
-        int sum = -1;
-        // ##################################################
 
-        // TODO Set sum to the correct int value.
+        // TODO Debug.Log() the sum of both values.
 
-        // ##################################################
-        return sum;
     }
 
     /*
@@ -31,23 +27,19 @@ public static class Exercise1
      *
      * 'humanYears' is guaranteed to be 0 or positive.
      */
-    public static int InDogYears(int humanYears)
+    public static void InDogYears(int humanYears)
     {
-        int dogYears = -1;
-        // ##################################################
 
-        // TODO Set dogYears to the correct int value.
+        // TODO Debug.Log() the dog years.
 
-        // ##################################################
-        return dogYears;
     }
 
     /*
-     * Change the current health of the player (by e.g. health potions or damage).
+     * Calculate a new health value of the player as it is being change (by e.g. health potions or damage).
      *
      * The minimum allowed health of the player is 0.
      * The maximum allowed health of the player is 100.
-     * You need to prevent 'newHealth' to be smaller than 0 and larger than 100.
+     * You need to prevent the new health to be smaller than 0 and larger than 100.
      *
      * 'currentHealth' is the current health of the player.
      * 'changeInHealth' is the amount that the current health of the player should be changed by.
@@ -55,15 +47,11 @@ public static class Exercise1
      * 'currentHealth' is guaranteed to be 0 or positive.
      * 'changeInHealth' can either be positive or negative.
      */
-    public static int ChangeHealth(int currentHealth, int changeInHealth)
+    public static void ChangeHealth(int currentHealth, int changeInHealth)
     {
-        int newHealth = -1;
-        // ##################################################
 
-        // TODO Set newHealth to the correct int value.
+        // TODO Debug.Log() the new health.
 
-        // ##################################################
-        return newHealth;
     }
 
     /*
@@ -75,19 +63,15 @@ public static class Exercise1
      *
      * 'books' is guaranteed to be 0 or positive.
      *
-     * Hint: Remember that 13/4 -> 3 while 13/4.0f -> 3.25f
+     * Hint: Remember to use floats in your division: 13/4 -> 3 but 13/4.0f -> 3.25f
      * Hint: Mathf.CeilToIn() might be helpful:
      * https://docs.unity3d.com/ScriptReference/Mathf.CeilToInt.html
      */
-    public static int RequiredShelves(int books)
+    public static void RequiredShelves(int books)
     {
-        int shelveAmount = -1;
-        // ##################################################
 
-        // TODO Set shelveAmount to the correct int value.
+        // TODO Debug.Log() the amount of shelves needed.
 
-        // ##################################################
-        return shelveAmount;
     }
 
     /*
@@ -103,35 +87,10 @@ public static class Exercise1
      * Hint: % (Remainder) might be helpful
      * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-
      */
-    public static int LeftoverBooks(int books)
+    public static void LeftoverBooks(int books)
     {
-        int leftoverBooks = -1;
-        // ##################################################
 
-        // TODO Set leftoverBooks to the correct int value.
+        // TODO Debug.Log() the amount of leftover books.
 
-        // ##################################################
-        return leftoverBooks;
-    }
-
-    /*
-     * Calculate if a value is an odd or even number.
-     *
-     * 0 is an even number.
-     *
-     * 'value' can either be positive or negative.
-     *
-     * Hint: % (Remainder) might be helpful
-     * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-
-     */
-    public static bool IsEven(int value)
-    {
-        bool even = false;
-        // ##################################################
-
-        // TODO Set even to the correct bool value.
-
-        // ##################################################
-        return even;
     }
 }
