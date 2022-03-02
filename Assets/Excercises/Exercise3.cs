@@ -25,15 +25,15 @@ public static class Exercise3
     }
 
     /*
-     * Convert human years into dog years (more accurately).
+     * Convert real years into dog years (more accurately).
      *
-     * The first human year equals 15 dog years.
-     * The second human year equals 9 dog years.
-     * Every additional human year equals 5 dog years.
+     * The first real year equals 15 dog years.
+     * The second real year equals 9 dog years.
+     * Every additional real year equals 5 dog years.
      *
-     * 'humanYears' is guaranteed to be 0 or positive.
+     * 'realYears' is guaranteed to be 0 or positive.
      */
-    public static void InDogYearsAdvanced(int humanYears)
+    public static void InDogYearsAdvanced(int realYears)
     {
 
         // TODO Debug.Log() the dog years.

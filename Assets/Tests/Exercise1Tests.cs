@@ -32,10 +32,10 @@ namespace Editor.Tests
         [TestCase(3, 21)]
         [TestCase(7, 7*7)]
         [TestCase(13, 13*7)]
-        public static void InDogYears(int humanYears, int expected)
+        public static void InDogYears(int realYears, int expected)
         {
             LogAssert.Expect(LogType.Log, expected.ToString());
-            Exercise1.InDogYears(humanYears);
+            Exercise1.InDogYears(realYears);
         }
 
         private const int MinHealth = 0;

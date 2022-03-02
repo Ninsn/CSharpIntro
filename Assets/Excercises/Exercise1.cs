@@ -21,13 +21,13 @@ public static class Exercise1
     }
 
     /*
-     * Convert human years into dog years.
+     * Convert real years into dog years.
      *
-     * One human year equals seven dog years.
+     * One real year equals seven dog years.
      *
-     * 'humanYears' is guaranteed to be 0 or positive.
+     * 'realYears' is guaranteed to be 0 or positive.
      */
-    public static void InDogYears(int humanYears)
+    public static void InDogYears(int realYears)
     {
 
         // TODO Debug.Log() the dog years.

@@ -34,10 +34,10 @@ namespace Editor.Tests
         [TestCase(3, 29)]
         [TestCase(7, 15 + 9 + 5*5)]
         [TestCase(13, 15 + 9 + 11*5)]
-        public static void InDogYearsAdvanced(int humanYears, int expected)
+        public static void InDogYearsAdvanced(int realYears, int expected)
         {
             LogAssert.Expect(LogType.Log, expected.ToString());
-            Exercise3.InDogYearsAdvanced(humanYears);
+            Exercise3.InDogYearsAdvanced(realYears);
         }
 
 
