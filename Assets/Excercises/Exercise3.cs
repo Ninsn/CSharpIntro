@@ -82,7 +82,8 @@ public static class Exercise3
     /*
      * Get the name of the month based on the numeric value.
      *
-     * Valid values are: January, February, March, April, May, June, July, August, September, October, November, December, Unknown.
+     * Valid values are: January, February, March, April, May, June, July,
+     * August, September, October, November, December, and Unknown.
      *
      * 'monthValue' is the numeric value of the month.
      * 1 -> January
@@ -111,6 +112,9 @@ public static class Exercise3
      *
      * Valid values for the season are: Spring, Summer, Fall, and Winter.
      *
+     * From March to May is Spring.
+     * From June to August is Summer.
+     * From September to November is Fall.
      * From December to February is Winter.
      *
      * 'month' is the name of the month.

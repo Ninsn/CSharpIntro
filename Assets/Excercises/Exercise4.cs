@@ -11,7 +11,7 @@ public static class Exercise4
      *
      * 'thing' is a string of the thing.
      *
-     * 'thing' is guaranteed to be not null and be not empty.
+     * 'thing' is guaranteed to be not null and not be empty.
      *
      * Hint: Don't forget a space between the two words.
      */

@@ -35,7 +35,7 @@ public static class Exercise1
     }
 
     /*
-     * Calculate a new health value of the player as it is being change (by e.g. health potions or damage).
+     * Calculate a new health value of the player as it is being changed (by e.g. health potions or damage).
      *
      * The minimum allowed health of the player is 0.
      * The maximum allowed health of the player is 100.
@@ -76,7 +76,8 @@ public static class Exercise1
 
     /*
      * You hate empty spaces in your shelves.
-     * You reconsider and decide to only buy those shelves that you can fully fill with books.     *
+     * You reconsider and decide to only buy those shelves that you can fully fill with books.
+     *
      * Each shelve can hold 8 books.
      * Calculate how many books will be left over after you filled all the shelves you bought with books.
      *
