@@ -106,6 +106,8 @@ public static class Exercise1
      *
      * 'currentHealth' is guaranteed to be 0 or positive.
      * 'changeInHealth' can either be positive or negative.
+     *
+     * Check the Mathf functions to prevent a value from outside of a certain range.
      */
     public static void ChangeHealth(int currentHealth, int changeInHealth)
     {
@@ -123,7 +125,7 @@ public static class Exercise1
      *
      * 'books' is guaranteed to be 0 or positive.
      *
-     * Hint: Remember to use floats in your division: 13/4 -> 3 but 13/4.0f -> 3.25f
+     * Hint: Remember to use floats in your division: 5/4 -> 1 but 5/4.0f -> 1.25f
      * Hint: Mathf.CeilToIn() might be helpful:
      * https://docs.unity3d.com/ScriptReference/Mathf.CeilToInt.html
      */
@@ -145,7 +147,7 @@ public static class Exercise1
      *
      * 'books' is guaranteed to be 0 or positive.
      *
-     * Hint: % (Remainder) might be helpful
+     * Hint: % (Remainder) might be helpful:
      * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-
      */
     public static void LeftoverBooks(int books)

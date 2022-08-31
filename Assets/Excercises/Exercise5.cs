@@ -25,7 +25,7 @@ public static class Exercise5
 
     /*
      * Shout out "AHH" with a customizable length.
-     * Add H's to 'shout' based on the provided length.
+     * Add H's to the shout based on the provided length.
      * E.g. 4 -> AHHHH
      *
      * 'length' is the amount of H's to shout.

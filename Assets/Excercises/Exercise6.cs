@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 ///  Exercises for lists
+/// Note: These functions now may require you to return a list instead of printing it with Debug.Log().
 /// </summary>
 public static class Exercise6
 {

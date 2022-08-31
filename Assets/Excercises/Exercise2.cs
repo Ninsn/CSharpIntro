@@ -13,6 +13,7 @@ public static class Exercise2
     *
     * 'value' can either be positive or negative.
     *
+    * Hint: What makes a number even? What makes a number odd? How can you check for this property?
     * Hint: % (Remainder) might be helpful
     * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-
     */
