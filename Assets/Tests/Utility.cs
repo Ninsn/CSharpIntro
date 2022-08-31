@@ -12,7 +12,7 @@ namespace Editor.Tests
             Assembly assembly = Assembly.GetAssembly(typeof(SceneView));
             Type logEntries = assembly.GetType("UnityEditor.LogEntries");
             MethodInfo clearConsoleMethod = logEntries.GetMethod("Clear");
-            clearConsoleMethod.Invoke(new object(), null);
+            clearConsoleMethod!.Invoke(new object(), null);
         }
     }
 }
