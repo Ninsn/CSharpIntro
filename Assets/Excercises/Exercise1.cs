@@ -32,6 +32,67 @@ public static class Exercise1
         // TODO Debug.Log() the dog years.
 
     }
+    
+    /*
+     * Calculate the new price of an item after applying a discount percentage.
+     * IGNORE any rounding of the price that would be necessary to represent valid amounts of euro and cents.
+     *
+     * 'price' is the price of the item.
+     * 'discount' is the discount percentage.
+     *
+     * The 'discount' percentage is a float number between 0 and 1.
+     * 0.0f -> 0%
+     * 0.3f -> 30%
+     * 0.55f -> 55%
+     * 1.0f -> 100%
+     * 
+     * 'price' is guaranteed to be 0 or positive.
+     * 'discount' is guaranteed to be between 0 and 1.
+     */
+    public static void ApplyDiscount(float price, float discount)
+    {
+
+        // TODO Debug.Log() the new price with the discount applied.
+
+    }
+
+    /*
+     * Share a cake with your friends.
+     * Calculate how much cake everyone gets if you share the cake equally with everyone.
+     *
+     * 'grams' is the weight of the cake.
+     * 'friends' is the amount of friends you'll share the cake with.
+     *
+     * 'grams' is guaranteed to be 0 or positive.
+     * 'friends' is guaranteed to be 0 or positive.
+     * 
+     * Hint: Don't forget to give yourself a piece of cake as well.
+     */
+    public static void ShareCake(float grams, int friends)
+    {
+
+        // TODO Debug.Log() the amount of cake everyone gets.
+
+    }
+
+    /*
+     * Calculate the new price of an item after applying a coupon that give you a flat rebate value.
+     * The final price can not be below 0, meaning you can not get money back by using the coupon.
+     *
+     * 'price' is the price of the item.
+     * 'couponValue' is the monetary value of the coupon.
+     * 
+     * 'price' is guaranteed to be 0 or positive.
+     * 'couponValue' is guaranteed to be 0 or positive.
+     *
+     * Hint: Check the Mathf functions to prevent a value from going below 0.
+     */
+    public static void ApplyCoupon(float price, float couponValue)
+    {
+
+        // TODO Debug.Log() the new price with the coupon applied.
+
+    }
 
     /*
      * Calculate a new health value of the player as it is being changed (by e.g. health potions or damage).
