@@ -18,9 +18,9 @@ public static class Exercise4
      */
     public static void MakeCool(string thing)
     {
-
+        
         // TODO Debug.Log() the cool thing.
-
+        
     }
 
     /*
@@ -39,8 +39,8 @@ public static class Exercise4
      */
     public static void Greet(string name)
     {
-
+        
         // TODO Debug.Log() the greeting.
-
+        
     }
 }

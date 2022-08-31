@@ -15,9 +15,9 @@ public static class Exercise6
      */
     public static void PrintNames(List<string> names)
     {
-
+        
         // TODO Debug.Log() the names separately.
-
+        
     }
 
    /*
@@ -34,9 +34,9 @@ public static class Exercise6
     */
     public static List<string> FilterNamesByPrefix(List<string> names, string prefix)
     {
-
+        
         // TODO Return a filtered list
-
+        
         return null;
     }
 
@@ -48,9 +48,9 @@ public static class Exercise6
      */
     public static List<int> Reverse(List<int> numbers)
     {
-
+        
         // TODO Return the numbers reversed.
-
+        
         return null;
     }
 

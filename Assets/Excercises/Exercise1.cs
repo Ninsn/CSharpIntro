@@ -14,9 +14,9 @@ public static class Exercise1
      */
     public static void Add(int a, int b)
     {
-
+        
         // TODO Debug.Log() the sum of both values.
-
+        
     }
 
     /*
@@ -28,9 +28,9 @@ public static class Exercise1
      */
     public static void InDogYears(int realYears)
     {
-
+        
         // TODO Debug.Log() the dog years.
-
+        
     }
     
     /*
@@ -51,9 +51,9 @@ public static class Exercise1
      */
     public static void ApplyDiscount(float price, float discount)
     {
-
+        
         // TODO Debug.Log() the new price with the discount applied.
-
+        
     }
 
     /*
@@ -70,9 +70,9 @@ public static class Exercise1
      */
     public static void ShareCake(float grams, int friends)
     {
-
+        
         // TODO Debug.Log() the amount of cake everyone gets.
-
+        
     }
 
     /*
@@ -89,9 +89,9 @@ public static class Exercise1
      */
     public static void ApplyCoupon(float price, float couponValue)
     {
-
+        
         // TODO Debug.Log() the new price with the coupon applied.
-
+        
     }
 
     /*
@@ -111,9 +111,9 @@ public static class Exercise1
      */
     public static void ChangeHealth(int currentHealth, int changeInHealth)
     {
-
+        
         // TODO Debug.Log() the new health.
-
+        
     }
 
     /*
@@ -131,9 +131,9 @@ public static class Exercise1
      */
     public static void RequiredShelves(int books)
     {
-
+        
         // TODO Debug.Log() the amount of shelves needed.
-
+        
     }
 
     /*
@@ -152,8 +152,8 @@ public static class Exercise1
      */
     public static void LeftoverBooks(int books)
     {
-
+        
         // TODO Debug.Log() the amount of leftover books.
-
+        
     }
 }

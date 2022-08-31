@@ -20,9 +20,9 @@ public static class Exercise3
      */
     public static void MyClamp(float number, float min, float max)
     {
-
+        
         // TODO Debug.Log() the clamped value.
-
+        
     }
 
     /*
@@ -36,9 +36,9 @@ public static class Exercise3
      */
     public static void InDogYearsAdvanced(int realYears)
     {
-
+        
         // TODO Debug.Log() the dog years.
-
+        
     }
 
     /*
@@ -56,9 +56,9 @@ public static class Exercise3
      */
     public static void TryCompleteQuest(int itemAmount, int requiredAmount)
     {
-
+        
         // TODO Debug.Log() the new item amount.
-
+        
     }
 
     /*
@@ -75,9 +75,9 @@ public static class Exercise3
      */
     public static void GetAgeName(int age)
     {
-
+        
         // TODO Debug.Log() the physical description of the person.
-
+        
     }
 
     /*
@@ -99,9 +99,9 @@ public static class Exercise3
      */
     public static void GetMonthName(int monthValue)
     {
-
+        
         // TODO Debug.Log() the name of the month;
-
+        
     }
 
     /*
@@ -124,8 +124,8 @@ public static class Exercise3
      */
     public static void GetSeason(string month)
     {
-
+        
         // TODO Debug.Log() the name of the season;
-
+        
     }
 }

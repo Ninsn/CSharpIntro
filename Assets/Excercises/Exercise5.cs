@@ -18,9 +18,9 @@ public static class Exercise5
      */
     public static void Factorial(int number)
     {
-
+        
         // TODO Debug.Log() the result.
-
+        
     }
 
     /*
@@ -36,9 +36,9 @@ public static class Exercise5
      */
     public static void Shout(int length)
     {
-
+        
         // TODO Debug.Log() the shout.
-
+        
     }
 
     /*
@@ -61,8 +61,8 @@ public static class Exercise5
      */
     public static void IsPrime(int number)
     {
-
+        
         // TODO Debug.Log() if prime or not.
-
+        
     }
 }

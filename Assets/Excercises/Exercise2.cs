@@ -19,9 +19,9 @@ public static class Exercise2
     */
     public static void IsEven(int value)
     {
-
+        
         // TODO Debug.Log() the bool containing if even or not.
-
+        
     }
 
     /*
@@ -32,9 +32,9 @@ public static class Exercise2
      */
     public static void CanBuyGame(float money, float price)
     {
-
+        
         // TODO Debug.Log() if you can buy the game or not.
-
+        
     }
 
     /*
@@ -48,9 +48,9 @@ public static class Exercise2
      */
     public static void IsSchoolDay(int weekdayIndex)
     {
-
+        
         // TODO Debug.Log() if it is part of the weekend or not.
-
+        
     }
 
     /*
@@ -62,9 +62,9 @@ public static class Exercise2
      */
     public static void IsTeenager(int age)
     {
-
+        
         // TODO Debug.Log() if they are a teenager.
-
+        
     }
 
     /*
@@ -78,8 +78,8 @@ public static class Exercise2
      */
     public static void IsMovingFast(float xSpeed)
     {
-
+        
         // TODO Debug.Log() if the GameObject is moving fast.
-
+        
     }
 }
