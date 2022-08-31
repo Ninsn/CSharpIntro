@@ -32,12 +32,38 @@ public static class Exercise5
      *
      * 'length' is guaranteed to be 0 or positive.
      *
+     * Hint: Use string concatenation using + to slowly add characters to the final string.
      * Hint: Don't forget the initial A.
      */
     public static void Shout(int length)
     {
         
         // TODO Debug.Log() the shout.
+        
+    }
+
+    /*
+     * Print a square of #'s using a single Debug.Log().
+     * E.g.
+     * 2x2   2x5     4x3
+     * ##    #####   ###
+     * ##    #####   ###
+     *               ###
+     *               ###
+     *
+     * 'height' is guaranteed to be 0 or positive.
+     * 'width' is guaranteed to be 0 or positive.
+     *
+     * 
+     * Hint: You will need to use nested loops (loop inside a loop).
+     * Hint: Start with an empty string and use string concatenation using the + operator
+     *       to slowly add characters to the final string.
+     * Hint: Use \n to add a line breaks for each 'row' of the square.
+     */
+    public static void PrintSquare(int height, int width)
+    {
+        
+        // TODO Debug.Log() the square.
         
     }
 

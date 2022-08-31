@@ -1,3 +1,7 @@
+using System;
+using System.Linq;
+using System.Text.RegularExpressions;
+
 using NUnit.Framework;
 
 using UnityEngine;
@@ -40,6 +44,21 @@ namespace Editor.Tests
         {
             LogAssert.Expect(LogType.Log, expected);
             Exercise5.Shout(length);
+        }
+        
+        [Test]
+        public static void PrintSquare([Values(0, 1, 2, 5)] int height,
+                                       [Values(0, 1, 2, 5)] int width)
+        {
+            if (height == 0 || width == 0)
+            {
+                LogAssert.Expect(LogType.Log, new Regex($"^\n*$", RegexOptions.Compiled));
+            }
+            else
+            {
+                LogAssert.Expect(LogType.Log, new Regex($"^(#{{{width}}}\n){{{height - 1}}}#{{{width}}}\n?$", RegexOptions.Compiled));
+            }
+            Exercise5.PrintSquare(height, width);
         }
 
         [TestCase(0, false)]
