@@ -14,9 +14,10 @@ public static class Exercise1
      */
     public static void Add(int a, int b)
     {
-        
         // TODO Debug.Log() the sum of both values.
-        
+
+        int sum = a + b;
+        Debug.Log(sum);
     }
 
     /*
@@ -28,9 +29,10 @@ public static class Exercise1
      */
     public static void InDogYears(int realYears)
     {
-        
         // TODO Debug.Log() the dog years.
-        
+
+        int sum = realYears *= 7;
+        Debug.Log(sum);
     }
     
     /*
@@ -51,9 +53,11 @@ public static class Exercise1
      */
     public static void ApplyDiscount(float price, float discount)
     {
-        
         // TODO Debug.Log() the new price with the discount applied.
         
+        float pricePercentage = 1 - discount;
+        float newPrice = price * pricePercentage;
+        Debug.Log(newPrice);
     }
 
     /*
@@ -72,9 +76,16 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the amount of cake everyone gets.
+
+        int people = friends + 1;
+        float sum = grams / people;
         
+        Debug.Log(sum);
+
     }
 
+    
+    
     /*
      * Calculate the new price of an item after applying a coupon that give you a flat rebate value.
      * The final price can not be below 0, meaning you can not get money back by using the coupon.
@@ -91,6 +102,7 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new price with the coupon applied.
+        
         
     }
 
