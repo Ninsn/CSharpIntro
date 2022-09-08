@@ -21,7 +21,10 @@ public static class Exercise2
     {
         
         // TODO Debug.Log() the bool containing if even or not.
-        
+        int remainder = value % 2;
+        bool even = remainder == 0;
+        Debug.Log(even);
+
     }
 
     /*
@@ -34,7 +37,8 @@ public static class Exercise2
     {
         
         // TODO Debug.Log() if you can buy the game or not.
-        
+        bool canBuy = money >= price;
+        Debug.Log(canBuy);
     }
 
     /*
@@ -50,7 +54,9 @@ public static class Exercise2
     {
         
         // TODO Debug.Log() if it is part of the weekend or not.
-        
+        bool weekday = weekdayIndex <= 4;
+        Debug.Log(weekday);
+
     }
 
     /*
@@ -64,7 +70,8 @@ public static class Exercise2
     {
         
         // TODO Debug.Log() if they are a teenager.
-        
+        bool teenager = age > 12 && age < 18;
+        Debug.Log(teenager);
     }
 
     /*
@@ -80,6 +87,8 @@ public static class Exercise2
     {
         
         // TODO Debug.Log() if the GameObject is moving fast.
-        
+        bool speed = xSpeed > 9.9f || xSpeed < -9.99f;
+        Debug.Log(speed);
+
     }
 }

@@ -1,4 +1,10 @@
 ﻿using System;
+
+using Codice.Client.BaseCommands;
+using Codice.CM.Common;
+
+using Unity.Plastic.Antlr3.Runtime.Debug;
+
 using UnityEngine;
 
 /// <summary>
@@ -22,7 +28,21 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the clamped value.
-        
+        float clampedNumber;
+
+        if (number < min)
+        {
+            clampedNumber = min;
+        }
+        else if (number > max)
+        {
+            clampedNumber = max;
+        }
+        else
+        {
+            clampedNumber = number;
+        }
+        Debug.Log(clampedNumber);
     }
 
     /*
@@ -38,7 +58,21 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the dog years.
+        int dogyears = 0;
         
+        if (realYears >= 1)
+        {
+            dogyears += 15;
+        }
+        if (realYears >= 2)
+        {
+            dogyears += 9;
+        }
+        if (realYears >= 3)
+        {
+            dogyears += (realYears - 2) * 5;
+        }
+        Debug.Log(dogyears);
     }
 
     /*
@@ -58,7 +92,18 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the new item amount.
-        
+        int newItemAmount;
+
+        if (itemAmount >= requiredAmount)
+        {
+            newItemAmount = itemAmount - requiredAmount;
+        }
+        else
+        {
+            newItemAmount = itemAmount;
+        }
+
+        Debug.Log(newItemAmount);
     }
 
     /*
@@ -77,7 +122,22 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the physical description of the person.
+        string description;
+
+        if (age <= 12)
+        {
+            description = "Child";
+        }
+        else if (age >= 18)
+        {
+            description = "Adult";
+        }
+        else
+        {
+            description = "Teenager";
+        }
         
+        Debug.Log(description);
     }
 
     /*
@@ -101,7 +161,49 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the name of the month;
-        
+
+        switch (monthValue)
+        {
+            case 1:
+                Debug.Log("January");
+                break;
+            case 2:
+                Debug.Log("February");
+                break;
+            case 3:
+                Debug.Log("March");
+                break;
+            case 4:
+                Debug.Log("April");
+                break;
+            case 5:
+                Debug.Log("May");
+                break;
+            case 6:
+                Debug.Log("June");
+                break;
+            case 7:
+                Debug.Log("July");
+                break;
+            case 8:
+                Debug.Log("August");
+                break;
+            case 9:
+                Debug.Log("September");
+                break;
+            case 10:
+                Debug.Log("October");
+                break;
+            case 11:
+                Debug.Log("November");
+                break;
+            case 12:
+                Debug.Log("December");
+                break;
+            default:
+                Debug.Log($"Unknown");
+                break;
+        }
     }
 
     /*
@@ -126,6 +228,34 @@ public static class Exercise3
     {
         
         // TODO Debug.Log() the name of the season;
-        
+        string season;
+
+        switch (month)
+        {
+            case "December": 
+            case "January":
+            case "February":
+                season = "Winter";
+                break;
+            case "March":
+            case "April":
+            case "May":
+                season = "Spring";
+                break;
+            case "June":
+            case "July":
+            case "August":
+                season = "Summer";
+                break;
+            case "September":
+            case "October":
+            case "November":
+                season = "Fall";
+                break;
+            default:
+                season = "";
+                break;
+        }
+        Debug.Log(season);
     }
 }

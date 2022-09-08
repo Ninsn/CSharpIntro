@@ -102,8 +102,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new price with the coupon applied.
-        
-        
+        float newPrice = Mathf.Max(0, price  - couponValue);
+        Debug.Log(newPrice);
     }
 
     /*
@@ -125,7 +125,10 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the new health.
-        
+
+        int health = currentHealth + changeInHealth;
+        float newHealth = Mathf.Clamp(health, 0, 100);
+        Debug.Log(newHealth);
     }
 
     /*
@@ -145,7 +148,8 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the amount of shelves needed.
-        
+        int shelveAmount = Mathf.CeilToInt(books / 8.0f);
+        Debug.Log(shelveAmount);
     }
 
     /*
@@ -166,6 +170,7 @@ public static class Exercise1
     {
         
         // TODO Debug.Log() the amount of leftover books.
-        
+        int leftoverBooks = books % 8;
+        Debug.Log(leftoverBooks);
     }
 }

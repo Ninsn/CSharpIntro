@@ -1,4 +1,7 @@
 ﻿using System;
+
+using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 
 /// <summary>
@@ -20,7 +23,9 @@ public static class Exercise4
     {
         
         // TODO Debug.Log() the cool thing.
-        
+        string msg = $"Cool {thing}";
+        Debug.Log(msg);
+
     }
 
     /*
@@ -41,6 +46,18 @@ public static class Exercise4
     {
         
         // TODO Debug.Log() the greeting.
+        string greeting;
+
+        if (name != null && name != "")
+        {
+            greeting = $"Hello {name}.";
+        }
+        else
+        {
+            greeting = "Hello friend.";
+            
+        }
+        Debug.Log(greeting);
         
     }
 }

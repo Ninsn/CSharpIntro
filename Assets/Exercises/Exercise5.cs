@@ -39,7 +39,14 @@ public static class Exercise5
     {
         
         // TODO Debug.Log() the shout.
-        
+        string result = "A";
+
+        for (int i = 0; i < length; i++)
+        {
+            result += "H";
+        }
+        Debug.Log(result);
+
     }
 
     /*
